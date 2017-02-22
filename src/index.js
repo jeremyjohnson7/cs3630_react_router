@@ -10,10 +10,10 @@ import Repos from './modules/Repos';
 ReactDOM.render(
     // <App />
     <Router history={browserHistory}>
-        <Route path="/" component={App} />
-        {/* add the routes here */}
-        <Route path="/repos" component={Repos} />
-        <Route path="/about" component={About} />
+        <Route path="/" component={App}>
+            <Route path="/repos" component={Repos} />
+            <Route path="/about" component={About} />
+        </Route>
     </Router>,
     document.getElementById('root')
 );
