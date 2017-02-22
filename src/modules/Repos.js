@@ -2,6 +2,7 @@
 import React from 'react'
 
 export default React.createClass({
-    render = () =>
-        <div>About</div>
-});
+    render() {
+        return <div>Repos</div>
+    }
+})
