@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import {Router, Route, hashHistory} from 'react-router';
+import About from './modules/About';
+import Repos from './modules/Repos';
 
 class App extends Component {
     render() {
@@ -13,6 +17,13 @@ class App extends Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
+
+                <Router history={hashHistory}>
+                    <Route path="/" component={App}/>
+                    {/* add the routes here */}
+                    <Route path="/repos" component={Repos}/>
+                    <Route path="/about" component={About}/>
+                </Router>
             </div>
         );
     }
