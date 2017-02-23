@@ -1,8 +1,14 @@
-// modules/About.js
 import React from 'react'
 
 export default React.createClass({
     render() {
-        return <div>About</div>
+        return (
+            <div>
+                <h1>About</h1>
+                <p className="App-intro">
+                    To get started, edit <code>src/App.js</code> and save to reload.
+                </p>
+            </div>
+        );
     }
 });
