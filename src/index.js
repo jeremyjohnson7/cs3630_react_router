@@ -9,16 +9,9 @@ import Home from './modules/Home';
 import About from './modules/About';
 import Repos from './modules/Repos';
 import Test from './modules/Test';
+// import Clock from './modules/Clock';
 
 ReactDOM.render(
-    // <App />
-    // <Router history={hashHistory}>
-    //     <Route path="/" component={App}>
-    //         <Route path="" component={Home} />
-    //         <Route path="/repos" component={Repos} />
-    //         <Route path="/about" component={About} />
-    //     </Route>
-    // </Router>,
     <Router history={hashHistory}>
         <Route path="/" component={App}>
             <Route path="/repos" component={Repos} />

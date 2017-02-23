@@ -4,10 +4,17 @@ export default React.createClass({
     render() {
         return (
             <div>
-                <h1>Repos</h1>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+                <h1>Repositories</h1>
+                <dl>
+                    <dt>abc</dt>
+                    <dd>Contains stuff</dd>
+                    
+                    <dt>def</dt>
+                    <dd>Contains other stuff</dd>
+                    
+                    <dt>ghj</dt>
+                    <dd>Contains more stuff</dd>
+                </dl>
             </div>
         );
     }

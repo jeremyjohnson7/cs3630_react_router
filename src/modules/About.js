@@ -6,7 +6,7 @@ export default React.createClass({
             <div>
                 <h1>About</h1>
                 <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
+                    The quick brown fox jumps over the lazy dog.
                 </p>
             </div>
         );
